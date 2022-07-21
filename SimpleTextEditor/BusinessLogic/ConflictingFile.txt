@@ -1,1 +1,1 @@
-﻿At the next merge this file will generate a conflict 
+﻿This file will generate a conlict at the next merge 
