@@ -17,12 +17,11 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Content="Simple Text Editor" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="15"/>
-        <Button Grid.Row="1" Grid.Column="0" Margin="15" IsEnabled="{Binding _history.CanUndo}">Undo</Button>
-        <!-- UndoBtn is inactive by default -->
-        <Button Grid.Row="1" Grid.Column="1" Margin="15" IsEnabled="{Binding _history.CanRedo}">Redo</Button>
-        <!-- RedoBtn is inactive by default-->
+        <Button Grid.Row="1" Grid.Column="0" Margin="15" >Undo</Button> <!-- UndoBtn is inactive by default -->
+        <Button Grid.Row="1" Grid.Column="1" Margin="15">Redo</Button> <!-- RedoBtn is inactive by default-->
         <TextBox Grid.Row="2" Grid.ColumnSpan="2" FontSize="15" Margin="10"
                  TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"
-                 Background="#e0dde6" x:Name="ContentTextBox"/>
+                 Background="#e0dde6" x:Name="ContentTextBox" Text="{Binding _editor.Content, Mode=TwoWay}"/>
+
     </Grid>
 </UserControl>
