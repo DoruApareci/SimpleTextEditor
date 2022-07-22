@@ -26,12 +26,5 @@ namespace EditorUI.Views
             InitializeComponent();
             this.DataContext = new MainViewModel();
         }
-
-        private void ContentTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            var binding = ((TextBox)sender).GetBindingExpression(TextBox.TextProperty);
-            binding.UpdateSource();//Forcing the data binding for faster reponse
-            //MessageBox.Show(ContentTextBox.Text); //just making sure things work as they should
-        }
     }
 }
