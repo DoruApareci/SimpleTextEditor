@@ -12,7 +12,7 @@ namespace BusinessLogic
     {
         private string _content="";
 
-        public string Content { get { return _content; } set { _content = value; } }
+        public string Content { get { return _content; } set { _content = value; } }//Trace.WriteLine(_content); //just making sure things work as they should
 
         public Editor()
         {
