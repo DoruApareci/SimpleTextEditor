@@ -22,7 +22,7 @@ namespace BusinessLogic
             }
         }
 
-        public string Content { get { return _content; } set { _content = value;NotifyPropertyChanged("Content"); Trace.WriteLine(_content); } }//Trace.WriteLine(_content); //just making sure things work as they should
+        public string Content { get { return _content; } set { _content = value;NotifyPropertyChanged("Content"); } }//Trace.WriteLine(_content); //just making sure things work as they should
 
         public Editor()
         {
