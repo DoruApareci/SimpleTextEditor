@@ -38,6 +38,6 @@ void ShowData()
 {
     Console.WriteLine("===============================");
     Console.WriteLine("Content: " + _editor.Content);
-    Console.WriteLine("CanUndo: " + _history.CanUndo);
-    Console.WriteLine("CanRedo: " + _history.CanRedo);
+    Console.WriteLine("CanUndo: " + _history.CanUndo(null));
+    Console.WriteLine("CanRedo: " + _history.CanRedo(null));
 }
